@@ -12,9 +12,9 @@ import requests
 
 class SPAM:
     def __init__(self):
-        self.blue = Col.green_to_red
-        self.lblue = Colors.StaticMIX((Col.light_red, Col.green, Col.green_to_red))
-        self.red = Colors.StaticMIX((Col.red, Col.white, Col.green_to_red))
+        self.blue = Col.green
+        self.lblue = Colors.StaticMIX((Col.green, Col.green, Col.green))
+        self.red = Colors.StaticMIX((Col.green, Col.green, Col.green))
         self.appVer = 40012
         self.appCode = '4.0.1'
         self.time_zone = int(round(time.time() * 1000))
@@ -53,7 +53,7 @@ class SPAM:
 \033[1;37m╚═╝     ╚═╝ ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ 
  
                                \n\n'''
-        print(Colorate.Vertical(Colors.DynamicMIX((Col.green_to_red, Col.light_gray)), Center.XCenter(title)) + Colorate.Vertical(Colors.DynamicMIX((Col.light_red, Col.light_blue)), Center.XCenter(banner)))
+        print(Colorate.Vertical(Colors.DynamicMIX((Col.green, Col.light_gray)), Center.XCenter(title)) + Colorate.Vertical(Colors.DynamicMIX((Col.light_red, Col.light_blue)), Center.XCenter(banner)))
     def random_string(self, length):
             number = ' '
             alpha = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNPQRSTUVWXYZ'
